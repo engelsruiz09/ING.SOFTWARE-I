@@ -1,0 +1,616 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="c2e59550-7a0b-4485-b788-ac8cec527d2e" created="3.48.0" activeEnvironment="QA" encryptionMode="Not encrypted" name="Project 1" projectVersion="" updated="3.48.0 2023-08-30T15:44:06Z" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings/>
+  <con:interface xsi:type="con:RestService" id="65efb7b0-3353-4b1e-8d20-f07c3395dd04" name="Cat Facts" type="rest_ex" wadlVersion="https://swagger.io/openapiv3/specification" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings id="df1ca8f3-d5b3-4bc4-9ebb-66f45d2c84d0"/>
+    <con:definitionCache type="TEXT" rootPart="Cat Facts.json">
+      <con:part>
+        <con:url>Cat Facts.json</con:url>
+        <con:content>{"openapi":"3.0.1","info":{"title":"Cat Facts","description":"","version":"1.0.0"},"servers":[{"url":"/"}],"paths":{"":{"description":"","get":{"description":"","responses":{"default":{"description":"Default response"}}}}}}</con:content>
+        <con:type>https://swagger.io/openapiv3/specification</con:type>
+      </con:part>
+    </con:definitionCache>
+    <con:endpoints/>
+    <con:environmentSpec>
+      <con:entry environmentId="5cd10bfc-d00f-473a-ac46-de9c1e0e5ede">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
+    <con:resource name="" path="" id="ec03cad6-e6f3-452f-9a4f-b35171bd67b0">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="Method 1" id="4bbf5cac-b21c-4e7a-aec5-64fa514b8a16" method="GET">
+        <con:settings/>
+        <con:parameters/>
+        <con:request name="Request 1" id="a974454a-6c22-439b-a935-c4f5ea595970" mediaType="application/json">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint xsi:nil="true"/>
+          <con:request/>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+    <con:resource name="2" path="" id="4b323e10-9cb2-46f8-bb2d-0c4e413ef727">
+      <con:settings/>
+      <con:parameters>
+        <con:parameter>
+          <con:name>max_length</con:name>
+          <con:style>QUERY</con:style>
+        </con:parameter>
+      </con:parameters>
+      <con:method name="Method 1" id="8b2c4a26-6f8d-4db1-a0e2-4ef115a22f0a" method="GET">
+        <con:settings/>
+        <con:parameters/>
+        <con:request name="Request 1" id="6983a186-eabc-4ed2-abbb-006e88b76d3b" mediaType="application/json">
+          <con:settings/>
+          <con:request/>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+  </con:interface>
+  <con:interface xsi:type="con:RestService" id="8608dd00-fd8b-4ea3-b991-a1705eadbf25" name="https://catfact.ninja/fact" type="rest_ex" wadlVersion="https://swagger.io/openapiv3/specification" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings id="76ff870f-1c61-439f-a2fa-c941bb47dd17"/>
+    <con:definitionCache type="TEXT" rootPart="https://catfact.ninja/fact.json">
+      <con:part>
+        <con:url>https://catfact.ninja/fact.json</con:url>
+        <con:content>{"openapi":"3.0.1","info":{"title":"https://catfact.ninja/fact","description":"","version":"1.0.0"},"servers":[{"url":"/"}],"paths":{"":{"description":"","get":{"description":"","responses":{"default":{"description":"Default response"}}}}}}</con:content>
+        <con:type>https://swagger.io/openapiv3/specification</con:type>
+      </con:part>
+    </con:definitionCache>
+    <con:endpoints>
+      <con:endpoint>https://catfact.ninja/facts</con:endpoint>
+    </con:endpoints>
+    <con:resource name="" path="" id="5a970135-dc0d-4ed9-baab-5c106975a30e">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="Method 1" id="2320d1b7-0649-41ff-a2b0-47c3c826e8b7" method="GET">
+        <con:settings/>
+        <con:parameters/>
+        <con:request name="Request 1" id="0efb0928-093c-45e2-a16d-47e1e4e2bd4f" mediaType="application/json">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>https://catfact.ninja/facts</con:endpoint>
+          <con:request/>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+  </con:interface>
+  <con:interface xsi:type="con:RestService" id="5a2c3d1d-0a86-46a5-a43b-82d0ddee704f" name="https://catfact.ninja/breeds" type="rest_ex" wadlVersion="https://swagger.io/openapiv3/specification" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings id="67078978-b1b3-4c26-9bd7-b02addbded64"/>
+    <con:definitionCache type="TEXT" rootPart="https://catfact.ninja/breeds.json">
+      <con:part>
+        <con:url>https://catfact.ninja/breeds.json</con:url>
+        <con:content>{"openapi":"3.0.1","info":{"title":"https://catfact.ninja/breeds","description":"","version":"1.0.0"},"servers":[{"url":"/"}],"paths":{"":{"description":"","get":{"description":"","responses":{"default":{"description":"Default response"}}}}}}</con:content>
+        <con:type>https://swagger.io/openapiv3/specification</con:type>
+      </con:part>
+    </con:definitionCache>
+    <con:endpoints/>
+    <con:resource name="" path="" id="58cbbdca-58f8-4b41-a78c-173606ba0b06">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="Method 1" id="6afd5989-214e-4cbf-afa8-6506ddb2f1d4" method="GET">
+        <con:settings/>
+        <con:parameters/>
+        <con:request name="GetRandomFactWithNoParameters" id="09f14ed6-726f-476e-972e-0b862bf3d564" mediaType="application/json">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint xsi:nil="true"/>
+          <con:request/>
+          <con:originalUri>https://catfact.ninja/breeds</con:originalUri>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+  </con:interface>
+  <con:testSuite id="78f6d509-64ba-45b7-ad69-d3274f66060e" name="GetFactTesting">
+    <con:settings id="bb678e50-ad65-426e-9bac-37243270ae3f"/>
+    <con:runType>SEQUENTIAL</con:runType>
+    <con:testCase id="6f26fb8d-1d94-4a40-8dec-d533a71ea58d" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="GetRandomFact" searchProperties="true" timeout="0">
+      <con:settings/>
+      <con:testStep type="restrequest" name="REST Request" id="503392f9-872c-4f45-a5c6-3ceb311f5b76">
+        <con:settings/>
+        <con:config service="Cat Facts" methodName="Method 1" resourcePath="" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="REST Request" id="72737152-a54d-4d90-bae0-9d179d768b4c" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:encoding>UTF-8</con:encoding>
+            <con:request/>
+            <con:originalUri>https://catfact.ninja/fact</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="5eea69bd-3d8a-4712-81bb-2474a15e1249" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+      <con:reportParameters/>
+    </con:testCase>
+    <con:testCase id="c4142ec0-0c32-4f66-9a82-6e832b40acec" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="GetRandomFactBasedOnLength" searchProperties="true" timeout="0">
+      <con:settings/>
+      <con:testStep type="restrequest" name="REST Request" id="232601e6-cbbd-4212-823e-9977d916f534">
+        <con:settings/>
+        <con:config service="https://catfact.ninja/fact" resourcePath="" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="REST Request" id="0efb0928-093c-45e2-a16d-47e1e4e2bd4f" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>https://catfact.ninja/facts</con:endpoint>
+            <con:request/>
+            <con:assertion type="Valid HTTP Status Codes" id="d9574a5c-6e2f-461a-9a34-250ce2bab3bc" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Response SLA Assertion" id="8a1e85e6-4e15-4b97-91bb-dcce1fa14048" name="Response SLA">
+              <con:configuration>
+                <SLA>200</SLA>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="REST Request 2" id="4b9a4ace-e44d-4d01-b4c1-24d53cddb7b3">
+        <con:settings/>
+        <con:config service="Cat Facts" resourcePath="" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="REST Request 2" id="6983a186-eabc-4ed2-abbb-006e88b76d3b" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:request/>
+            <con:originalUri>https://catfact.ninja/facts</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="132bb380-8f78-411e-9e45-05622598e407" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="MessageContentAssertion" id="c5cd46b1-6563-473f-a6c8-c10f688fdc98" name="Message Content Assertion">
+              <con:configuration xsi:type="con:MessageContentAssertion">
+                <con:elements>
+                  <con:xpath>declare namespace ns1='https://catfact.ninja/facts';
+//ns1:Response[1]/ns1:current_page[1]</con:xpath>
+                  <con:element>current_page</con:element>
+                  <con:type xsi:nil="true"/>
+                  <con:operator>=</con:operator>
+                  <con:enabled>true</con:enabled>
+                  <con:expectedValue>1</con:expectedValue>
+                  <con:hasValue>false</con:hasValue>
+                  <con:numberType>false</con:numberType>
+                </con:elements>
+                <con:elements>
+                  <con:xpath>declare namespace ns1='https://catfact.ninja/facts';
+//ns1:Response[1]/ns1:data[1]/ns1:e[1]/ns1:fact[1]</con:xpath>
+                  <con:element>fact</con:element>
+                  <con:type xsi:nil="true"/>
+                  <con:operator>=</con:operator>
+                  <con:enabled>true</con:enabled>
+                  <con:expectedValue>Cats have 3 eyelids.</con:expectedValue>
+                  <con:hasValue>false</con:hasValue>
+                  <con:numberType>false</con:numberType>
+                </con:elements>
+                <con:elements>
+                  <con:xpath>declare namespace ns1='https://catfact.ninja/facts';
+//ns1:Response[1]/ns1:data[1]/ns1:e[1]/ns1:length[1]</con:xpath>
+                  <con:element>length</con:element>
+                  <con:type xsi:nil="true"/>
+                  <con:operator>=</con:operator>
+                  <con:enabled>true</con:enabled>
+                  <con:expectedValue>20</con:expectedValue>
+                  <con:hasValue>false</con:hasValue>
+                  <con:numberType>false</con:numberType>
+                </con:elements>
+                <con:elements>
+                  <con:xpath>declare namespace ns1='https://catfact.ninja/facts';
+//ns1:Response[1]/ns1:first_page_url[1]</con:xpath>
+                  <con:element>first_page_url</con:element>
+                  <con:type xsi:nil="true"/>
+                  <con:operator>=</con:operator>
+                  <con:enabled>true</con:enabled>
+                  <con:expectedValue>https://catfact.ninja/facts?page=1</con:expectedValue>
+                  <con:hasValue>false</con:hasValue>
+                  <con:numberType>false</con:numberType>
+                </con:elements>
+                <con:elements>
+                  <con:xpath>declare namespace ns1='https://catfact.ninja/facts';
+//ns1:Response[1]/ns1:from[1]</con:xpath>
+                  <con:element>from</con:element>
+                  <con:type xsi:nil="true"/>
+                  <con:operator>=</con:operator>
+                  <con:enabled>true</con:enabled>
+                  <con:expectedValue>1</con:expectedValue>
+                  <con:hasValue>false</con:hasValue>
+                  <con:numberType>false</con:numberType>
+                </con:elements>
+                <con:elements>
+                  <con:xpath>declare namespace ns1='https://catfact.ninja/facts';
+//ns1:Response[1]/ns1:last_page[1]</con:xpath>
+                  <con:element>last_page</con:element>
+                  <con:type xsi:nil="true"/>
+                  <con:operator>=</con:operator>
+                  <con:enabled>true</con:enabled>
+                  <con:expectedValue>1</con:expectedValue>
+                  <con:hasValue>false</con:hasValue>
+                  <con:numberType>false</con:numberType>
+                </con:elements>
+                <con:elements>
+                  <con:xpath>declare namespace ns1='https://catfact.ninja/facts';
+//ns1:Response[1]/ns1:last_page_url[1]</con:xpath>
+                  <con:element>last_page_url</con:element>
+                  <con:type xsi:nil="true"/>
+                  <con:operator>=</con:operator>
+                  <con:enabled>true</con:enabled>
+                  <con:expectedValue>https://catfact.ninja/facts?page=1</con:expectedValue>
+                  <con:hasValue>false</con:hasValue>
+                  <con:numberType>false</con:numberType>
+                </con:elements>
+                <con:elements>
+                  <con:xpath>declare namespace ns1='https://catfact.ninja/facts';
+//ns1:Response[1]/ns1:links[1]/ns1:e[1]/ns1:url[1]</con:xpath>
+                  <con:element>url</con:element>
+                  <con:type xsi:nil="true"/>
+                  <con:operator>exists</con:operator>
+                  <con:enabled>true</con:enabled>
+                  <con:expectedValue xsi:nil="true"/>
+                  <con:hasValue>false</con:hasValue>
+                  <con:numberType>false</con:numberType>
+                </con:elements>
+                <con:elements>
+                  <con:xpath>declare namespace ns1='https://catfact.ninja/facts';
+//ns1:Response[1]/ns1:links[1]/ns1:e[1]/ns1:url[1]/@null</con:xpath>
+                  <con:element>@null</con:element>
+                  <con:type/>
+                  <con:operator>=</con:operator>
+                  <con:enabled>true</con:enabled>
+                  <con:expectedValue>true</con:expectedValue>
+                  <con:hasValue>false</con:hasValue>
+                  <con:numberType>false</con:numberType>
+                </con:elements>
+                <con:elements>
+                  <con:xpath>declare namespace ns1='https://catfact.ninja/facts';
+//ns1:Response[1]/ns1:links[1]/ns1:e[1]/ns1:label[1]</con:xpath>
+                  <con:element>label</con:element>
+                  <con:type xsi:nil="true"/>
+                  <con:operator>=</con:operator>
+                  <con:enabled>true</con:enabled>
+                  <con:expectedValue>Previous</con:expectedValue>
+                  <con:hasValue>false</con:hasValue>
+                  <con:numberType>false</con:numberType>
+                </con:elements>
+                <con:elements>
+                  <con:xpath>declare namespace ns1='https://catfact.ninja/facts';
+//ns1:Response[1]/ns1:links[1]/ns1:e[1]/ns1:active[1]</con:xpath>
+                  <con:element>active</con:element>
+                  <con:type xsi:nil="true"/>
+                  <con:operator>=</con:operator>
+                  <con:enabled>true</con:enabled>
+                  <con:expectedValue>false</con:expectedValue>
+                  <con:hasValue>false</con:hasValue>
+                  <con:numberType>false</con:numberType>
+                </con:elements>
+                <con:elements>
+                  <con:xpath>declare namespace ns1='https://catfact.ninja/facts';
+//ns1:Response[1]/ns1:links[1]/ns1:e[2]/ns1:url[1]</con:xpath>
+                  <con:element>url</con:element>
+                  <con:type xsi:nil="true"/>
+                  <con:operator>=</con:operator>
+                  <con:enabled>true</con:enabled>
+                  <con:expectedValue>https://catfact.ninja/facts?page=1</con:expectedValue>
+                  <con:hasValue>false</con:hasValue>
+                  <con:numberType>false</con:numberType>
+                </con:elements>
+                <con:elements>
+                  <con:xpath>declare namespace ns1='https://catfact.ninja/facts';
+//ns1:Response[1]/ns1:links[1]/ns1:e[2]/ns1:label[1]</con:xpath>
+                  <con:element>label</con:element>
+                  <con:type xsi:nil="true"/>
+                  <con:operator>=</con:operator>
+                  <con:enabled>true</con:enabled>
+                  <con:expectedValue>1</con:expectedValue>
+                  <con:hasValue>false</con:hasValue>
+                  <con:numberType>false</con:numberType>
+                </con:elements>
+                <con:elements>
+                  <con:xpath>declare namespace ns1='https://catfact.ninja/facts';
+//ns1:Response[1]/ns1:links[1]/ns1:e[2]/ns1:active[1]</con:xpath>
+                  <con:element>active</con:element>
+                  <con:type xsi:nil="true"/>
+                  <con:operator>=</con:operator>
+                  <con:enabled>true</con:enabled>
+                  <con:expectedValue>true</con:expectedValue>
+                  <con:hasValue>false</con:hasValue>
+                  <con:numberType>false</con:numberType>
+                </con:elements>
+                <con:elements>
+                  <con:xpath>declare namespace ns1='https://catfact.ninja/facts';
+//ns1:Response[1]/ns1:links[1]/ns1:e[3]/ns1:url[1]</con:xpath>
+                  <con:element>url</con:element>
+                  <con:type xsi:nil="true"/>
+                  <con:operator>exists</con:operator>
+                  <con:enabled>true</con:enabled>
+                  <con:expectedValue xsi:nil="true"/>
+                  <con:hasValue>false</con:hasValue>
+                  <con:numberType>false</con:numberType>
+                </con:elements>
+                <con:elements>
+                  <con:xpath>declare namespace ns1='https://catfact.ninja/facts';
+//ns1:Response[1]/ns1:links[1]/ns1:e[3]/ns1:url[1]/@null</con:xpath>
+                  <con:element>@null</con:element>
+                  <con:type/>
+                  <con:operator>=</con:operator>
+                  <con:enabled>true</con:enabled>
+                  <con:expectedValue>true</con:expectedValue>
+                  <con:hasValue>false</con:hasValue>
+                  <con:numberType>false</con:numberType>
+                </con:elements>
+                <con:elements>
+                  <con:xpath>declare namespace ns1='https://catfact.ninja/facts';
+//ns1:Response[1]/ns1:links[1]/ns1:e[3]/ns1:label[1]</con:xpath>
+                  <con:element>label</con:element>
+                  <con:type xsi:nil="true"/>
+                  <con:operator>=</con:operator>
+                  <con:enabled>true</con:enabled>
+                  <con:expectedValue>Next</con:expectedValue>
+                  <con:hasValue>false</con:hasValue>
+                  <con:numberType>false</con:numberType>
+                </con:elements>
+                <con:elements>
+                  <con:xpath>declare namespace ns1='https://catfact.ninja/facts';
+//ns1:Response[1]/ns1:links[1]/ns1:e[3]/ns1:active[1]</con:xpath>
+                  <con:element>active</con:element>
+                  <con:type xsi:nil="true"/>
+                  <con:operator>=</con:operator>
+                  <con:enabled>true</con:enabled>
+                  <con:expectedValue>false</con:expectedValue>
+                  <con:hasValue>false</con:hasValue>
+                  <con:numberType>false</con:numberType>
+                </con:elements>
+                <con:elements>
+                  <con:xpath>declare namespace ns1='https://catfact.ninja/facts';
+//ns1:Response[1]/ns1:next_page_url[1]</con:xpath>
+                  <con:element>next_page_url</con:element>
+                  <con:type xsi:nil="true"/>
+                  <con:operator>exists</con:operator>
+                  <con:enabled>true</con:enabled>
+                  <con:expectedValue xsi:nil="true"/>
+                  <con:hasValue>false</con:hasValue>
+                  <con:numberType>false</con:numberType>
+                </con:elements>
+                <con:elements>
+                  <con:xpath>declare namespace ns1='https://catfact.ninja/facts';
+//ns1:Response[1]/ns1:next_page_url[1]/@null</con:xpath>
+                  <con:element>@null</con:element>
+                  <con:type/>
+                  <con:operator>=</con:operator>
+                  <con:enabled>true</con:enabled>
+                  <con:expectedValue>true</con:expectedValue>
+                  <con:hasValue>false</con:hasValue>
+                  <con:numberType>false</con:numberType>
+                </con:elements>
+                <con:elements>
+                  <con:xpath>declare namespace ns1='https://catfact.ninja/facts';
+//ns1:Response[1]/ns1:path[1]</con:xpath>
+                  <con:element>path</con:element>
+                  <con:type xsi:nil="true"/>
+                  <con:operator>=</con:operator>
+                  <con:enabled>true</con:enabled>
+                  <con:expectedValue>https://catfact.ninja/facts</con:expectedValue>
+                  <con:hasValue>false</con:hasValue>
+                  <con:numberType>false</con:numberType>
+                </con:elements>
+                <con:elements>
+                  <con:xpath>declare namespace ns1='https://catfact.ninja/facts';
+//ns1:Response[1]/ns1:per_page[1]</con:xpath>
+                  <con:element>per_page</con:element>
+                  <con:type xsi:nil="true"/>
+                  <con:operator>=</con:operator>
+                  <con:enabled>true</con:enabled>
+                  <con:expectedValue>10</con:expectedValue>
+                  <con:hasValue>false</con:hasValue>
+                  <con:numberType>false</con:numberType>
+                </con:elements>
+                <con:elements>
+                  <con:xpath>declare namespace ns1='https://catfact.ninja/facts';
+//ns1:Response[1]/ns1:prev_page_url[1]</con:xpath>
+                  <con:element>prev_page_url</con:element>
+                  <con:type xsi:nil="true"/>
+                  <con:operator>exists</con:operator>
+                  <con:enabled>true</con:enabled>
+                  <con:expectedValue xsi:nil="true"/>
+                  <con:hasValue>false</con:hasValue>
+                  <con:numberType>false</con:numberType>
+                </con:elements>
+                <con:elements>
+                  <con:xpath>declare namespace ns1='https://catfact.ninja/facts';
+//ns1:Response[1]/ns1:prev_page_url[1]/@null</con:xpath>
+                  <con:element>@null</con:element>
+                  <con:type/>
+                  <con:operator>=</con:operator>
+                  <con:enabled>true</con:enabled>
+                  <con:expectedValue>true</con:expectedValue>
+                  <con:hasValue>false</con:hasValue>
+                  <con:numberType>false</con:numberType>
+                </con:elements>
+                <con:elements>
+                  <con:xpath>declare namespace ns1='https://catfact.ninja/facts';
+//ns1:Response[1]/ns1:to[1]</con:xpath>
+                  <con:element>to</con:element>
+                  <con:type xsi:nil="true"/>
+                  <con:operator>=</con:operator>
+                  <con:enabled>true</con:enabled>
+                  <con:expectedValue>1</con:expectedValue>
+                  <con:hasValue>false</con:hasValue>
+                  <con:numberType>false</con:numberType>
+                </con:elements>
+                <con:elements>
+                  <con:xpath>declare namespace ns1='https://catfact.ninja/facts';
+//ns1:Response[1]/ns1:total[1]</con:xpath>
+                  <con:element>total</con:element>
+                  <con:type xsi:nil="true"/>
+                  <con:operator>=</con:operator>
+                  <con:enabled>true</con:enabled>
+                  <con:expectedValue>1</con:expectedValue>
+                  <con:hasValue>false</con:hasValue>
+                  <con:numberType>false</con:numberType>
+                </con:elements>
+                <con:originalMessage><![CDATA[<Response xmlns="https://catfact.ninja/facts">
+   <current_page>1</current_page>
+   <data>
+      <e>
+         <fact>Cats have 3 eyelids.</fact>
+         <length>20</length>
+      </e>
+   </data>
+   <first_page_url>https://catfact.ninja/facts?page=1</first_page_url>
+   <from>1</from>
+   <last_page>1</last_page>
+   <last_page_url>https://catfact.ninja/facts?page=1</last_page_url>
+   <links>
+      <e>
+         <url null="true"/>
+         <label>Previous</label>
+         <active>false</active>
+      </e>
+      <e>
+         <url>https://catfact.ninja/facts?page=1</url>
+         <label>1</label>
+         <active>true</active>
+      </e>
+      <e>
+         <url null="true"/>
+         <label>Next</label>
+         <active>false</active>
+      </e>
+   </links>
+   <next_page_url null="true"/>
+   <path>https://catfact.ninja/facts</path>
+   <per_page>10</per_page>
+   <prev_page_url null="true"/>
+   <to>1</to>
+   <total>1</total>
+</Response>]]></con:originalMessage>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Simple Contains" id="e2c80e1d-b779-4bd4-806d-19393eb8cd67" name="Contains">
+              <con:configuration>
+                <token>20</token>
+                <ignoreCase>false</ignoreCase>
+                <useRegEx>false</useRegEx>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters>
+              <con:entry key="max_length" value="20"/>
+            </con:parameters>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+      <con:reportParameters/>
+    </con:testCase>
+    <con:properties/>
+    <con:reportParameters/>
+  </con:testSuite>
+  <con:properties/>
+  <con:wssContainer/>
+  <con:databaseConnectionContainer/>
+  <con:jmsConnectionContainer/>
+  <con:oAuth2ProfileContainer/>
+  <con:oAuth1ProfileContainer/>
+  <con:reporting>
+    <con:xmlTemplates/>
+    <con:parameters/>
+  </con:reporting>
+  <con:eventHandlers type="RequestFilter.filterRequest" name="RequestFilter.filterRequest">
+    <con:script>// Sample event script to add custom HTTP header to all outgoing REST, SOAP and HTTP(S) calls
+// This code is often used for adding custom authentication to ReadyAPI functional tests
+
+// If hardcoding the token, uncomment and change line 5
+// token = '4567'
+
+// If your token is parameterized in Project level custom property, uncomment line 8
+// token = request.parent.testCase.testSuite.project.getProperty('auth_token').getValue()
+
+// To modify all outgoing calls, remove comments from lines 11 to 16
+// headers = request.requestHeaders
+// if (headers.containsKey('auth_token2') == false) {
+//   headers.put('auth_token2', token)
+//   request.requestHeaders = headers
+// }</con:script>
+  </con:eventHandlers>
+  <con:eventHandlers type="TestRunListener.afterStep" name="TestRunListener.afterStep">
+    <con:script>// Save all test step results into files
+// Change the directory path in line 5 to a location where you want to store details
+// then uncomment lines 5 to 10
+
+// filePath = 'C:\\tempOutputDirectory\\'
+// fos = new java.io.FileOutputStream(filePath + testStepResult.testStep.label + '.txt', true)
+// pw = new java.io.PrintWriter(fos)
+// testStepResult.writeTo(pw)
+// pw.close()
+// fos.close()</con:script>
+  </con:eventHandlers>
+  <con:environment id="5cd10bfc-d00f-473a-ac46-de9c1e0e5ede" name="QA" index="0">
+    <con:service type="REST" name="Cat Facts">
+      <con:endpoint authProfile="No Authorization" proxyHost="" proxyPort="" proxyUsername="" proxyPassword="" areGlobalProxySettingsIgnored="false">https://catfact.ninja/facts</con:endpoint>
+    </con:service>
+    <con:service type="REST" name="https://catfact.ninja/breeds">
+      <con:endpoint authProfile="No Authorization" proxyHost="" proxyPort="" proxyUsername="" proxyPassword="" areGlobalProxySettingsIgnored="false">https://catfact.ninja/breeds</con:endpoint>
+    </con:service>
+    <con:databaseConnectionContainer/>
+    <con:jmsConnectionContainer/>
+  </con:environment>
+  <con:authRepository/>
+  <con:environmentSpec>
+    <con:entry environmentId="5cd10bfc-d00f-473a-ac46-de9c1e0e5ede">
+      <con:authProfile>No Authorization</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+  <con:tags/>
+</con:soapui-project>
